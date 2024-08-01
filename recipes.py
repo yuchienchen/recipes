@@ -1,3 +1,5 @@
+import doctest
+
 
 def read_dict_from_file(filename):
     """
@@ -23,6 +25,8 @@ def read_dict_from_file(filename):
 
         print(dict)
 
+doctest.testmod(name='read_dict_from_file')
+
 
 def can_make(recipe, pantry):
     """
@@ -36,8 +40,13 @@ def can_make(recipe, pantry):
     >>> can_make({'flour': 5.0, 'salt': 5.0}, {'flour': 200.0, 'salt': 2.5})
     False
     """
-    pass
+    for key in recipe.keys() and pantry.keys():
+        if recipe[key] < pantry[key]:
+            return True
+        else:
+            return False
 
+doctest.testmod(name='can_make')
 
 def make_recipe(recipe, pantry):
     """

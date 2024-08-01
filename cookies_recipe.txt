@@ -1,0 +1,8 @@
+flour:: 185
+baking soda:: 2
+butter:: 115
+sugar:: 100
+brown sugar:: 80
+salt:: 2
+vanilla:: 5
+chocolate chips:: 225

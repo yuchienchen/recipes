@@ -1,0 +1,15 @@
+flour:: 500
+yeast:: 50
+sugar:: 150
+baking soda:: 20
+butter:: 200
+brown sugar:: 100
+salt:: 200
+garlic powder:: 20
+olive oil:: 300
+tomato paste:: 100
+tomato sauce:: 100
+oregano:: 20
+mozzarella:: 150
+vanilla:: 5
+chocolate chips:: 225

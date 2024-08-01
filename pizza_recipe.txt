@@ -1,0 +1,10 @@
+flour:: 250
+yeast:: 20
+sugar:: 10
+salt:: 5
+garlic powder:: 5
+olive oil:: 10
+tomato paste:: 50
+tomato sauce:: 60
+oregano:: 10
+mozzarella:: 100
