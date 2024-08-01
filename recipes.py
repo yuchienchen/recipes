@@ -8,12 +8,20 @@ def read_dict_from_file(filename):
     >>> read_dict_from_file('recipe.txt')
     {'flour': 200.0, 'salt': 2.5}
     """
+    dict = {}
     with open(filename) as file:
         for line in file: 
             line = line.strip()
-            print(line)
-            parts = line.split('::')
-            print(parts)
+            # print(line)
+            parts = line.split(':: ')
+            # print(parts)
+            key = parts[0]
+            value = float(parts[-1])
+            # print(key)
+            # print(value)
+            dict[key] = value
+
+        print(dict)
 
 
 def can_make(recipe, pantry):
