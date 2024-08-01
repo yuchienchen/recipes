@@ -58,8 +58,12 @@ def make_recipe(recipe, pantry):
     >>> make_recipe({'flour': 5.0, 'salt': 1.0}, {'flour': 200.0, 'salt': 2.5})
     {'flour': 195.0, 'salt': 1.5}
     """
-    pass
+    for key in recipe.keys() and pantry.keys():
+        pantry[key] = pantry[key] - recipe[key] 
 
+    print(pantry)
+
+doctest.testmod(name='make_recipe')
 
 def main():
     pantry_file = input("What pantry file would you like to use? ")
